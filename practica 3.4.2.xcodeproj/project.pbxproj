@@ -15,6 +15,7 @@
 		040A11D627FE844900C03972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040A11D427FE844900C03972 /* LaunchScreen.storyboard */; };
 		040A11DE27FE895D00C03972 /* clases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A11DD27FE895D00C03972 /* clases.swift */; };
 		040A11E027FE956900C03972 /* datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A11DF27FE956800C03972 /* datos.swift */; };
+		7123B7492800702B006C0DAA /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123B7482800702B006C0DAA /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		040A11D727FE844900C03972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040A11DD27FE895D00C03972 /* clases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clases.swift; sourceTree = "<group>"; };
 		040A11DF27FE956800C03972 /* datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datos.swift; sourceTree = "<group>"; };
+		7123B7482800702B006C0DAA /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				040A11D727FE844900C03972 /* Info.plist */,
 				040A11DD27FE895D00C03972 /* clases.swift */,
 				040A11DF27FE956800C03972 /* datos.swift */,
+				7123B7482800702B006C0DAA /* extensions.swift */,
 			);
 			path = "practica 3.4.2";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				040A11CA27FE843300C03972 /* AppDelegate.swift in Sources */,
 				040A11DE27FE895D00C03972 /* clases.swift in Sources */,
 				040A11CC27FE843300C03972 /* SceneDelegate.swift in Sources */,
+				7123B7492800702B006C0DAA /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

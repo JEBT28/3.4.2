@@ -12,12 +12,18 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     @IBOutlet weak var pkFiguras: UIPickerView!
     @IBOutlet weak var lblResultado: UILabel!
 
+    @IBOutlet weak var txtR: UITextField!
+    @IBOutlet weak var txtG: UITextField!
+    @IBOutlet weak var txtB: UITextField!
+    
+    
     var figura = figuras[0]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         pkFiguras.delegate = self
         pkFiguras.dataSource = self
+        refreshColor()
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -143,7 +149,6 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
                 _ in
                 let mayor = Double(alert.textFields?[0].text ?? "0.0")!
                 let menor = Double(alert.textFields?[1].text ?? "0.0")!
-
                 let rombo = Rombo(mayor,menor)
 
                 let area = rombo.calcularArea()
@@ -443,6 +448,36 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         alert.addAction(btnCancelar)
 
         present(alert, animated: true)
+    }
+    
+    
+    
+    @IBAction func changeRedValue(_ sender: UISlider) {
+        txtR.text = String(format: "%.0f" ,sender.value)
+       
+        refreshColor()
+    }
+    
+    @IBAction func changeGreenValue(_ sender: UISlider) {
+        txtG.text = String(format: "%.0f" ,sender.value)
+       
+        refreshColor()
+    }
+    
+    
+    @IBAction func changeBlueValue(_ sender: UISlider) {
+        txtB.text = String(format: "%.0f" ,sender.value)
+      
+        refreshColor()
+    }
+    
+    func refreshColor(){
+        let red = Float(txtR.text!)!
+        let green = Float(txtG.text!)!
+        let blue = Float(txtB.text!)!
+        
+        pkFiguras.backgroundColor = UIColor(red,green,blue)
+        
     }
 }
 
